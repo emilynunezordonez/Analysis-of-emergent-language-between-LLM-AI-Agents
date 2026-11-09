@@ -1,0 +1,336 @@
+[
+  {
+    "image_id": "image_000",
+    "objects": [
+      {
+        "shape": "square",
+        "colour": "blue",
+        "position": "lower-left",
+        "size": "large"
+      }
+    ]
+  },
+  {
+    "image_id": "image_001",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "small"
+      },
+      {
+        "shape": "square",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_002",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "lower-left",
+        "size": "medium"
+      },
+      {
+        "shape": "circle",
+        "colour": "blue",
+        "position": "centre",
+        "size": "large"
+      },
+      {
+        "shape": "square",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_003",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "large"
+      }
+    ]
+  },
+  {
+    "image_id": "image_004",
+    "objects": [
+      {
+        "shape": "square",
+        "colour": "red",
+        "position": "upper-left",
+        "size": "small"
+      },
+      {
+        "shape": "triangle",
+        "colour": "blue",
+        "position": "upper-right",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_005",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "medium"
+      },
+      {
+        "shape": "triangle",
+        "colour": "blue",
+        "position": "centre",
+        "size": "large"
+      },
+      {
+        "shape": "triangle",
+        "colour": "blue",
+        "position": "upper-right",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_006",
+    "objects": [
+      {
+        "shape": "triangle",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_007",
+    "objects": [
+      {
+        "shape": "triangle",
+        "colour": "blue",
+        "position": "lower-left",
+        "size": "large"
+      },
+      {
+        "shape": "triangle",
+        "colour": "yellow",
+        "position": "upper-right",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_008",
+    "objects": [
+      {
+        "shape": "triangle",
+        "colour": "yellow",
+        "position": "upper-right",
+        "size": "medium"
+      },
+      {
+        "shape": "circle",
+        "colour": "blue",
+        "position": "upper-left",
+        "size": "small"
+      },
+      {
+        "shape": "triangle",
+        "colour": "green",
+        "position": "lower-right",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_009",
+    "objects": [
+      {
+        "shape": "square",
+        "colour": "yellow",
+        "position": "upper-right",
+        "size": "large"
+      }
+    ]
+  },
+  {
+    "image_id": "image_010",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "lower-right",
+        "size": "medium"
+      },
+      {
+        "shape": "circle",
+        "colour": "green",
+        "position": "upper-left",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_011",
+    "objects": [
+      {
+        "shape": "square",
+        "colour": "red",
+        "position": "centre",
+        "size": "large"
+      },
+      {
+        "shape": "triangle",
+        "colour": "green",
+        "position": "upper-right",
+        "size": "large"
+      },
+      {
+        "shape": "square",
+        "colour": "yellow",
+        "position": "lower-right",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_012",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "upper-right",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_013",
+    "objects": [
+      {
+        "shape": "triangle",
+        "colour": "red",
+        "position": "centre",
+        "size": "large"
+      },
+      {
+        "shape": "triangle",
+        "colour": "green",
+        "position": "lower-right",
+        "size": "large"
+      }
+    ]
+  },
+  {
+    "image_id": "image_014",
+    "objects": [
+      {
+        "shape": "square",
+        "colour": "green",
+        "position": "lower-left",
+        "size": "large"
+      },
+      {
+        "shape": "square",
+        "colour": "red",
+        "position": "lower-left",
+        "size": "medium"
+      },
+      {
+        "shape": "circle",
+        "colour": "red",
+        "position": "lower-left",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_015",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "green",
+        "position": "upper-left",
+        "size": "large"
+      }
+    ]
+  },
+  {
+    "image_id": "image_016",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "yellow",
+        "position": "lower-left",
+        "size": "medium"
+      },
+      {
+        "shape": "circle",
+        "colour": "blue",
+        "position": "lower-left",
+        "size": "medium"
+      }
+    ]
+  },
+  {
+    "image_id": "image_017",
+    "objects": [
+      {
+        "shape": "triangle",
+        "colour": "green",
+        "position": "upper-left",
+        "size": "medium"
+      },
+      {
+        "shape": "triangle",
+        "colour": "green",
+        "position": "lower-left",
+        "size": "medium"
+      },
+      {
+        "shape": "triangle",
+        "colour": "yellow",
+        "position": "upper-left",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_018",
+    "objects": [
+      {
+        "shape": "circle",
+        "colour": "blue",
+        "position": "upper-left",
+        "size": "small"
+      }
+    ]
+  },
+  {
+    "image_id": "image_019",
+    "objects": [
+      {
+        "shape": "triangle",
+        "colour": "blue",
+        "position": "centre",
+        "size": "medium"
+      },
+      {
+        "shape": "triangle",
+        "colour": "blue",
+        "position": "upper-right",
+        "size": "medium"
+      }
+    ]
+  }
+]
