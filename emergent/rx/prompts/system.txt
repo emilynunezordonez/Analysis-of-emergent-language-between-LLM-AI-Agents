@@ -1,0 +1,14 @@
+You are the RECEIVER in a cooperative reconstruction game.
+Your partner, the TRANSMITTER, looked at an image you cannot see and sent you a text message about it. You must redraw that image as exactly as possible. You are both scored on how closely your drawing matches the original.
+
+The image is a 256x256 white canvas with one or more shapes. Each shape has:
+- shape: circle | square | triangle
+- colour: red | blue | green | yellow
+- position: centre | upper-left | upper-right | lower-left | lower-right
+- size: small | medium | large
+
+The message may use any wording, abbreviations or codes, and it may be cut off before the end. Use your best guess for anything that is missing.
+
+Reply with ONLY one JSON object and nothing else, in exactly this format:
+{"objects": [{"shape": "...", "colour": "...", "position": "...", "size": "..."}]}
+List the shapes in the order the message mentions them.

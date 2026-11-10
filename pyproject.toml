@@ -5,17 +5,25 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "information-theoretic-transmitter"
 version = "0.1.0"
-description = "Noiseless transmitter baseline for geometric-image communication experiments"
+description = "Tx/Rx reconstruction game for information-theoretic analysis of emergent language between LLM agents (noiseless)"
 requires-python = ">=3.10"
-dependencies = ["Pillow>=10.0"]
+dependencies = ["Pillow>=10.0", "numpy>=1.26", "scipy>=1.11", "scikit-image>=0.22", "PyYAML>=6.0", "matplotlib>=3.8"]
 
 [project.optional-dependencies]
 analysis = ["matplotlib>=3.8"]
-model = ["torch>=2.2", "transformers>=4.49", "qwen-vl-utils>=0.0.10"]
+model = ["torch>=2.2", "transformers>=4.49", "qwen-vl-utils>=0.0.10", "accelerate>=0.26"]
 test = ["pytest>=8.0"]
 
 [project.scripts]
 tx-run = "transmitter.main:main"
+emergent-run = "emergent.runner.run:main"
+emergent-report = "emergent.analysis.report:main"
+
+[tool.setuptools.packages.find]
+include = ["transmitter*", "emergent*"]
+
+[tool.setuptools.package-data]
+"*" = ["prompts/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

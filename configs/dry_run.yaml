@@ -1,0 +1,10 @@
+# Smallest end-to-end check: mock LLM, 4 images, all Tx modes, two budgets.
+# python -m emergent.runner.run --config configs/dry_run.yaml
+experiment: {name: dry-run, output_dir: runs/dry_run, seeds: [0], rounds: 1}
+dataset: {data_dir: data, limit: 4}
+backend: {type: mock, mock: {malformed_rate: 0.2}}
+tx: {modes: [llm_free, natural_language, json, vector], extractor: backend}
+channel: {token_budgets: [null, 10]}
+memory: {enabled: [false]}
+evaluation: {llm_judge: true}
+analysis: {bootstrap: 200}

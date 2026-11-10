@@ -1,0 +1,8 @@
+# Memory on/off over 3 rounds with the MOCK backend (its "convention drift" is scripted).
+experiment: {name: memory-mock, output_dir: runs/memory_mock, seeds: [0], rounds: 3}
+dataset: {data_dir: data}
+backend: {type: mock, mock: {malformed_rate: 0.1}}
+tx: {modes: [llm_free]}
+channel: {token_budgets: [null, 10]}
+memory: {enabled: [false, true], window: 5, tx_feedback: score, rx_feedback: ground_truth}
+logging: {save_images: 2}

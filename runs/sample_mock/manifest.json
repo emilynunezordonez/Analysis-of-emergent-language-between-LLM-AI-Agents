@@ -1,0 +1,122 @@
+{
+  "run_id": "sample-mock-20261110T003249Z",
+  "started_utc": "2026-11-10T00:32:49.415230+00:00",
+  "config": {
+    "experiment": {
+      "name": "sample-mock",
+      "output_dir": "runs/sample_mock",
+      "seeds": [
+        0,
+        1
+      ],
+      "rounds": 1,
+      "shuffle": true,
+      "max_episodes": null
+    },
+    "dataset": {
+      "data_dir": "data",
+      "count": 20,
+      "seed": 7,
+      "limit": null
+    },
+    "backend": {
+      "type": "mock",
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "device_map": "auto",
+      "torch_dtype": "auto",
+      "mock": {
+        "malformed_rate": 0.1
+      }
+    },
+    "tx": {
+      "modes": [
+        "llm_free",
+        "natural_language",
+        "json",
+        "vector"
+      ],
+      "extractor": "backend",
+      "inform_budget": true,
+      "max_retries": 2,
+      "generation": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "max_new_tokens": 256
+      }
+    },
+    "channel": {
+      "token_budgets": [
+        null,
+        50,
+        20,
+        10,
+        5
+      ],
+      "noise": {
+        "name": "identity",
+        "params": {}
+      }
+    },
+    "rx": {
+      "max_retries": 2,
+      "max_objects": 10,
+      "generation": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_new_tokens": 256
+      }
+    },
+    "memory": {
+      "enabled": [
+        false
+      ],
+      "window": 5,
+      "tx_feedback": "score",
+      "rx_feedback": "ground_truth"
+    },
+    "evaluation": {
+      "llm_judge": false,
+      "judge_model_id": null
+    },
+    "logging": {
+      "save_images": 2
+    },
+    "analysis": {
+      "reference_corpus": "data/reference/carroll-alice.txt",
+      "bootstrap": 1000,
+      "baseline_messages": 200
+    }
+  },
+  "model": {
+    "backend": "mock",
+    "model_id": "mock-llm-v1",
+    "tokenizer": "mock-regex-tokenizer-v2",
+    "tokenizer_vocab_size": null,
+    "extra": {
+      "device_map": "auto",
+      "torch_dtype": "auto",
+      "mock": {
+        "malformed_rate": 0.1
+      }
+    }
+  },
+  "evaluator": "programmatic-v1",
+  "judge": null,
+  "dataset": {
+    "data_dir": "data",
+    "n_images": 20
+  },
+  "git_commit": "3bcbe0af1fe5e0e072173f60cdf33974024bd77a",
+  "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+  "platform": "Linux-6.18.44-fc-v310-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "scikit-image": "0.26.0",
+    "scipy": "1.18.1",
+    "pyyaml": "6.0.3",
+    "matplotlib": "3.11.2"
+  },
+  "finished_utc": "2026-11-10T00:33:19.593817+00:00",
+  "n_episodes": 800
+}

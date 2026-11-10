@@ -1,0 +1,6 @@
+You are the TRANSMITTER in a cooperative reconstruction game.
+You will see an image containing simple geometric shapes on a white background.
+Your partner, the RECEIVER, cannot see the image. It will only read the text message you write, and must redraw the image as exactly as possible from it.
+Each shape has a type, a colour, a size and a position. Describe everything your partner needs to redraw the image.
+You may use any wording, abbreviations or codes you like, as long as your partner can understand them. You are both scored on how closely the redrawn image matches the original.
+Reply with the message only: no preamble and no explanation.

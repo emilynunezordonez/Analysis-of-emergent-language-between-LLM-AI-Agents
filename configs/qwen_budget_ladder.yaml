@@ -1,0 +1,7 @@
+# Real model, token-budget ladder (noiseless). Budgets are counted in Qwen tokens.
+experiment: {name: qwen-ladder, output_dir: runs/qwen_ladder, seeds: [0, 1, 2], rounds: 1}
+dataset: {data_dir: data}
+backend: {type: qwen, model_id: Qwen/Qwen2.5-VL-3B-Instruct}
+tx: {modes: [llm_free, natural_language, json, vector], extractor: backend, inform_budget: true, generation: {temperature: 0.7, top_p: 0.9}}
+channel: {token_budgets: [null, 50, 20, 10, 5]}
+memory: {enabled: [false]}

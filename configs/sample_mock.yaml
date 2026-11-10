@@ -1,0 +1,12 @@
+# Sample run committed in runs/sample_mock. MOCK backend: tests the pipeline, not findings.
+# Full noiseless grid: all Tx modes x the token-budget ladder x 2 seeds over 20 images.
+experiment: {name: sample-mock, output_dir: runs/sample_mock, seeds: [0, 1], rounds: 1}
+dataset: {data_dir: data}
+backend: {type: mock, mock: {malformed_rate: 0.1}}
+tx:
+  modes: [llm_free, natural_language, json, vector]
+  extractor: backend
+  generation: {temperature: 0.7, top_p: 0.9, max_new_tokens: 256}
+channel: {token_budgets: [null, 50, 20, 10, 5], noise: {name: identity}}
+memory: {enabled: [false]}
+logging: {save_images: 2}
